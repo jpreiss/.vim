@@ -1,0 +1,27 @@
+[submodule "pack/james/start/vimtex"]
+	path = pack/james/start/vimtex
+	url = https://github.com/lervag/vimtex
+[submodule "pack/james/start/vim-surround"]
+	path = pack/james/start/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "pack/james/start/yaifa"]
+	path = pack/james/start/yaifa
+	url = https://github.com/raimondi/yaifa
+[submodule "pack/james/start/ultisnips"]
+	path = pack/james/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "pack/james/start/vim-snippets"]
+	path = pack/james/start/vim-snippets
+	url = https://github.com/honza/vim-snippets
+[submodule "pack/james/start/vim-easy-align"]
+	path = pack/james/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
+[submodule "pack/james/start/vim-airline"]
+	path = pack/james/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "pack/james/start/vim-airline-themes"]
+	path = pack/james/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/james/start/vCoolor.vim"]
+	path = pack/james/start/vCoolor.vim
+	url = https://github.com/KabbAmine/vCoolor.vim
