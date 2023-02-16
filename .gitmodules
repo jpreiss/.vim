@@ -8,10 +8,10 @@
 	path = pack/james/start/yaifa
 	url = https://github.com/raimondi/yaifa
 [submodule "pack/james/start/ultisnips"]
-	path = pack/james/start/ultisnips
+	path = pack/james/opt/ultisnips
 	url = https://github.com/SirVer/ultisnips
 [submodule "pack/james/start/vim-snippets"]
-	path = pack/james/start/vim-snippets
+	path = pack/james/opt/vim-snippets
 	url = https://github.com/honza/vim-snippets
 [submodule "pack/james/start/vim-easy-align"]
 	path = pack/james/start/vim-easy-align
@@ -25,3 +25,6 @@
 [submodule "pack/james/start/vCoolor.vim"]
 	path = pack/james/start/vCoolor.vim
 	url = https://github.com/KabbAmine/vCoolor.vim
+[submodule "pack/james/start/vim-commentary"]
+	path = pack/james/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary

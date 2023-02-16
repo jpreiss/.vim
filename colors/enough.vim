@@ -68,7 +68,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi SpellLocal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Boolean ctermbg=NONE ctermfg=32 cterm=NONE guibg=NONE guifg=#0087d7 gui=NONE
     hi Character ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
-    hi Comment ctermbg=NONE ctermfg=239 cterm=NONE guibg=NONE guifg=#4e4e4e gui=NONE
+    hi Comment ctermbg=NONE ctermfg=239 cterm=NONE guibg=NONE guifg=#6e6e6e gui=NONE
     hi Conditional ctermbg=NONE ctermfg=32 cterm=NONE guibg=NONE guifg=#0087d7 gui=NONE
     hi Constant ctermbg=NONE ctermfg=32 cterm=NONE guibg=NONE guifg=#0087d7 gui=NONE
     hi Define ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE

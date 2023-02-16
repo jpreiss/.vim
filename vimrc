@@ -95,6 +95,22 @@ if has('macunix')
     set guifont=Monaco:h12
 endif
 
+" Mac terminals don't have access to Python 3 by default.
+if (has('macunix') && has('gui')) || has('linux')
+    packadd! ultisnips
+    packadd! vim-snippets
+    packadd! vimwiki
+    let g:vimwiki_list = [{
+        \ 'path': '~/vimwiki/',
+        \ 'path_html': '~/vimwiki/html/',
+        \ 'index': 'main',
+        \ 'template_default': 'default',
+        \ 'custom_wiki2html': 'vimwiki_markdown',
+        \ 'html_filename_parameterization': 1,
+        \ 'ext': '.md',
+        \ 'syntax': 'markdown'}]
+endif
+
 " TODO: wildignore? set hidden?
 
 
