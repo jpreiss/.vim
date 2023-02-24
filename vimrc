@@ -97,6 +97,8 @@ endif
 
 " Mac terminals don't have access to Python 3 by default.
 if (has('macunix') && has('gui')) || has('linux')
+    packadd! ale
+    let g:ale_completion_enabled = 1
     packadd! ultisnips
     packadd! vim-snippets
     packadd! vimwiki
