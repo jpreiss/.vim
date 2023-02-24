@@ -10,9 +10,6 @@
 [submodule "pack/james/start/ultisnips"]
 	path = pack/james/opt/ultisnips
 	url = https://github.com/SirVer/ultisnips
-[submodule "pack/james/start/vim-snippets"]
-	path = pack/james/opt/vim-snippets
-	url = https://github.com/honza/vim-snippets
 [submodule "pack/james/start/vim-easy-align"]
 	path = pack/james/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
@@ -28,3 +25,8 @@
 [submodule "pack/james/start/vim-commentary"]
 	path = pack/james/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/james/opt/ale"]
+	path = pack/james/opt/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/james/opt/vim-snippets/"]
+	url = git@github.com:jpreiss/vim-snippets
