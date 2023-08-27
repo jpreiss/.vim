@@ -66,7 +66,7 @@ noremap <F12> :vertical resize +5<cr>
 " Airline config.
 let g:airline_theme='lucius'
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#ale#enabled = 1
+" let g:airline#extensions#ale#enabled = 1
 let g:airline_right_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_left_alt_sep= '|'
@@ -97,8 +97,19 @@ endif
 
 " Mac terminals don't have access to Python 3 by default.
 if (has('macunix') && has('gui')) || has('linux')
-    packadd! ale
-    let g:ale_completion_enabled = 1
+    " packadd! ale
+    " let g:ale_completion_enabled = 1
+
+    packadd lsp
+    " Clangd language server
+    call LspAddServer([#{
+        \    name: 'clangd',
+        \    filetype: ['c', 'cpp'],
+        \    path: '/usr/local/bin/clangd',
+        \    args: ['--background-index', '--enable-config']
+        \  }])
+    call LspOptionsSet({'showDiagOnStatusLine': v:true})
+
     packadd! ultisnips
     packadd! vim-snippets
     packadd! vimwiki
