@@ -108,6 +108,18 @@ if (has('macunix') && has('gui')) || has('linux')
         \    path: '/usr/local/bin/clangd',
         \    args: ['--background-index', '--enable-config']
         \  }])
+    call LspAddServer([#{
+        \    name: 'pylsp',
+        \    filetype: 'python',
+        \    path: '/Library/Frameworks/Python.framework/Versions/3.11/bin/pylsp',
+        \    args: ['--check-parent-process', '-v'],
+        \  }])
+    call LspAddServer([#{
+        \    name: 'texlab',
+        \    filetype: ['tex'],
+        \    path: '/usr/local/bin/texlab',
+        \    args: [],
+        \  }])
     call LspOptionsSet({'showDiagOnStatusLine': v:true})
 
     packadd! ultisnips
