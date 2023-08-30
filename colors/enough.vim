@@ -36,7 +36,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Question ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Search ctermbg=70 ctermfg=254 cterm=NONE guibg=#5f1f00 guifg=#e4e4e4 gui=NONE
     hi Substitute ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
-    hi SpecialKey ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi SpecialKey  ctermbg=232 ctermfg=239 cterm=NONE guibg=#080808 guifg=#606060 gui=NONE
     hi TooLong ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Underlined ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi Visual ctermbg=243 ctermfg=254 cterm=NONE guibg=#555555 guifg=#e4e4e4 gui=NONE
