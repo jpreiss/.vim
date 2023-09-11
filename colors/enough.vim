@@ -46,7 +46,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi Title ctermbg=NONE ctermfg=254 cterm=NONE guibg=NONE guifg=#e4e4e4 gui=NONE
     hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
     hi Cursor ctermbg=NONE ctermfg=254 cterm=NONE guibg=#999999 guifg=#000000 gui=NONE
-    hi NonText ctermbg=NONE ctermfg=NONE cterm=NONE guibg=NONE guifg=NONE gui=NONE
+    hi NonText ctermbg=232 ctermfg=239 cterm=NONE guibg=#080808 guifg=#4e4e4e gui=NONE
     hi LineNr ctermbg=232 ctermfg=239 cterm=NONE guibg=#080808 guifg=#4e4e4e gui=NONE
     hi SignColumn ctermbg=232 ctermfg=254 cterm=NONE guibg=#080808 guifg=#e4e4e4 gui=NONE
     hi StatusLine ctermbg=232 ctermfg=254 cterm=NONE guibg=#080808 guifg=#e4e4e4 gui=NONE
@@ -161,7 +161,7 @@ elseif &t_Co == 8 || $TERM !~# '^linux' || &t_Co == 16
     hi Title ctermbg=NONE ctermfg=white cterm=NONE
     hi Conceal ctermbg=NONE ctermfg=NONE cterm=NONE
     hi Cursor ctermbg=NONE ctermfg=white cterm=NONE
-    hi NonText ctermbg=NONE ctermfg=NONE cterm=NONE
+    hi NonText ctermbg=darkgray ctermfg=gray cterm=NONE
     hi LineNr ctermbg=darkgray ctermfg=gray cterm=NONE
     hi SignColumn ctermbg=darkgray ctermfg=white cterm=NONE
     hi StatusLine ctermbg=darkgray ctermfg=white cterm=NONE
