@@ -31,3 +31,6 @@
 [submodule "pack/james/opt/lsp"]
 	path = pack/james/opt/lsp
 	url = https://github.com/yegappan/lsp
+[submodule "pack/james/opt/vim-snippets"]
+	path = pack/james/opt/vim-snippets
+	url = git@github.com:jpreiss/vim-snippets
