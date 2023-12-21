@@ -28,8 +28,6 @@
 [submodule "pack/james/opt/ale"]
 	path = pack/james/opt/ale
 	url = https://github.com/dense-analysis/ale.git
-[submodule "pack/james/opt/vim-snippets/"]
-	url = git@github.com:jpreiss/vim-snippets
 [submodule "pack/james/opt/lsp"]
 	path = pack/james/opt/lsp
 	url = https://github.com/yegappan/lsp
