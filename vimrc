@@ -74,6 +74,7 @@ let g:airline_left_sep = '|'
 
 " Vimtex config.
 let g:tex_flavor = 'latex'
+let g:vimtex_indent_enabled = 0
 
 " UltiSnips config.
 let g:UltiSnipsExpandTrigger="<tab>"
