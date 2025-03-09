@@ -34,3 +34,6 @@
 [submodule "pack/james/opt/vim-snippets"]
 	path = pack/james/opt/vim-snippets
 	url = git@github.com:jpreiss/vim-snippets
+[submodule "pack/james/opt/vim-wayland-clipboard"]
+	path = pack/james/opt/vim-wayland-clipboard
+	url = git@github.com:jasonccox/vim-wayland-clipboard

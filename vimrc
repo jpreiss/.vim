@@ -96,13 +96,19 @@ if has('macunix')
     set guifont=Monaco:h12
 endif
 
-" Mac terminals don't have access to Python 3 by default.
-if (has('macunix') && has('gui')) || has('linux')
-    " packadd! ale
-    " let g:ale_completion_enabled = 1
+" Mac terminals don't have access to Python 3 by default, so we need to use a
+" restricted set of plugins there.
 
+if (has('macunix') && has('gui')) || has('linux')
+    packadd! ultisnips
+    packadd! vim-snippets
     packadd lsp
-    " Clangd language server
+    call LspOptionsSet({'showDiagOnStatusLine': v:true})
+endif
+
+" TODO: Can we use PATH to avoid the different paths across OSes?
+
+if has('macunix') && has('gui')
     call LspAddServer([#{
         \    name: 'clangd',
         \    filetype: ['c', 'cpp'],
@@ -121,24 +127,33 @@ if (has('macunix') && has('gui')) || has('linux')
         \    path: '/usr/local/bin/texlab',
         \    args: [],
         \  }])
-    call LspOptionsSet({'showDiagOnStatusLine': v:true})
+endif
 
-    packadd! ultisnips
-    packadd! vim-snippets
-    packadd! vimwiki
-    let g:vimwiki_list = [{
-        \ 'path': '~/vimwiki/',
-        \ 'path_html': '~/vimwiki/html/',
-        \ 'index': 'main',
-        \ 'template_default': 'default',
-        \ 'custom_wiki2html': 'vimwiki_markdown',
-        \ 'html_filename_parameterization': 1,
-        \ 'ext': '.md',
-        \ 'syntax': 'markdown'}]
+if has('linux')
+    packadd! vim-wayland-clipboard
+
+    " Clangd language server
+    call LspAddServer([#{
+        \    name: 'clangd',
+        \    filetype: ['c', 'cpp'],
+        \    path: '/usr/bin/clangd',
+        \    args: ['--background-index', '--enable-config']
+        \  }])
+    call LspAddServer([#{
+        \    name: 'pylsp',
+        \    filetype: 'python',
+        \    path: '/usr/bin/pylsp',
+        \    args: ['--check-parent-process', '-v'],
+        \  }])
+    call LspAddServer([#{
+        \    name: 'texlab',
+        \    filetype: ['tex'],
+        \    path: '/home/james/.cargo/bin/texlab',
+        \    args: [],
+        \  }])
 endif
 
 " TODO: wildignore? set hidden?
-
 
 function! SyntaxItem()
   return synIDattr(synID(line("."),col("."),1),"name")
